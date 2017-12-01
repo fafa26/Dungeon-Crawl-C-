@@ -1,5 +1,5 @@
 # Dungeon-Crawl-C-
-Dungeon Crawl game - My 1st C++ game
+Dungeon Crawl game (improved) - My 1st C++ game
 
 A Code::Block project
 
