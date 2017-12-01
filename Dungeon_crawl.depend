@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1512130397 source:e:\code\c++\dungeon_crawl\function.cpp
+	<iostream>
+
+1512129612 e:\code\c++\dungeon_crawl\function.h
+
+1512129640 source:e:\code\c++\dungeon_crawl\main.cpp
+	<iostream>
+	<cstdio>
+	<cstdlib>
+	"function.h"
+	<conio.h>
+
