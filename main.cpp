@@ -18,7 +18,7 @@ int main() {
     int playerPositionX = 0;
     int playerPositionY = 0;
 
-    // create the blank playground
+    // create the blank playground size 10x10
     char **playGround;
     playGround = new char *[10];
     for(int i = 0; i < 10; i++)
@@ -30,10 +30,10 @@ int main() {
             playGround[i][j] = '.';
         }
 
-    // create player
+    // create player at (0;0)
     playGround[0][0] = 'H';
 
-    // create treasure
+    // create treasure at (9;9)
     playGround[9][9] = 'X';
 
     // create blank trap map
@@ -45,9 +45,13 @@ int main() {
     // create random trap
     for ( int i = 0; i < 10; i++)
         for ( int j = 0 ; j < 10 ; j++) {
+            // set 0 to non-trap position
             trapMap[i][j] = 0;
+            // if not position (0;0) and (9;9)
             if ((i+j) != 0 && (i+j) != 18)
+                // random 0 - 5 and set a trap if return 1
                 if ((rand()%6) == 1)
+                    //set 1 to trap position
                     trapMap[i][j] = 1;
         }
 
@@ -112,7 +116,7 @@ int main() {
             cout << "You claimed the TREASURE! \n"
                  << "YOU WIN! \n"
                  << "   Visit my Github: \n"
-                 << "   https://github.com/fafa26/Dungeon-Crawl-C-   \n"
+                 << "   https://github.com/namdaoduy/Dungeon-Crawl-C-   \n"
                  << "Enter to play more \n";
             cin.get();
             break;
